@@ -6,7 +6,7 @@ const PORT = 3000;
 
 // GET request that sends a PDF
 app.get('/get-pdf', (req, res) => {
-    const filePath = path.join(__dirname, 'public', 'AnshumanResume.pdf');
+    const filePath = path.join(__dirname, 'public', 'AnshumanGupta_Resume.pdf');
     res.setHeader('Content-Type', 'application/pdf');
     res.sendFile(filePath);
 });
